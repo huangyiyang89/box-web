@@ -49,7 +49,7 @@
             document.getElementById('box').addEventListener("paste", function (event) {
                 var data = event.clipboardData.getData('text/plain');
                 ws.send("openurl," + data);
-                panel.textContent = "打开" + data;
+                panel.textContent = "正在打开" + data;
                 document.getElementById('box').blur();
             });
 
